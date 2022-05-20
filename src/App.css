@@ -1,0 +1,236 @@
+body {
+  background-color: #3B3B3B;
+  color: burlywood;
+}
+
+.header-container {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 5px 0;
+  height: 10vh;
+}
+
+
+.header-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.header-anchor {
+  margin: 25px;
+}
+
+.blur {
+  opacity: 0.03;
+
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 90vh;
+  z-index: 0;
+  position: relative;
+}
+
+.main-content {
+  size: 25px;
+  color: bisque;
+}
+
+.main-statement {}
+
+
+.main-information {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+
+
+.main-connect-button {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #eeafaf;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+  max-width: 400px;
+}
+
+.main-connect-button:disabled {
+  pointer-events: none;
+}
+
+.main-connect-button:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.main-connect-button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.send-container {
+  width: 100%;
+}
+
+.close-btn {
+  display: flex;
+  justify-content: right;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.popup-form-send {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 45%;
+  position: absolute;
+  /* margin-left: auto;
+  margin-right: auto; */
+
+  margin-top: 5%;
+  width: 100%;
+  /* max-width: 300px; */
+  /* display: inline-block; */
+}
+
+.popup-form-labels {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+.from-label-send {
+  margin: 10px;
+}
+
+
+label {
+  color: #B4886B;
+  font-weight: bold;
+  width: 130px;
+  float: right;
+
+}
+
+
+
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 50%;
+}
+
+.form__field {
+  font-family: inherit;
+  /* width: 100%; */
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  color: white;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #9b9b9b;
+}
+
+.form__field:focus .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #11998e;
+  font-weight: 700;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #11998e, #38ef7d);
+  border-image-slice: 1;
+}
+
+
+
+.close-icon {
+  cursor: pointer;
+}
+
+
+
+
+
+/* CSS */
+.header-anchor {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.header-anchor:hover {
+  box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
